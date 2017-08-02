@@ -1,0 +1,29 @@
+.container-fluid{
+  width: 100%;
+  margin: 30px;
+}
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 10px;
+        margin-right : 10px;
+    }
+}
+i{
+  color: white;
+}
+.header-image {
+  background: url('assets/images/pizza.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+.jumbotron {
+  height: 350px;
+  color: white;
+  background:transparent;
+}
