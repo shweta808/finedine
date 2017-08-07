@@ -1,75 +1,56 @@
-!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Fine-Dine</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style-portfolio.css">
-        <link rel="stylesheet" href="css/picto-foundry-food.css" />
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link rel="icon" href="favicon-1.ico" type="image/x-icon">``
-    </head>
-
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Fine-Dine</a>
-                    </div>
-                    <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search for restuarants..">
-              </div>
-              <button type="submit" class="btn btn-default">Search</button>
-
-
-       <div class = "col-lg-6">
-          <div class = "input-group">
-             <div class = "input-group-btn">
-                <button type = "button" class = "btn btn-default dropdown-toggle"
-                   data-toggle = "dropdown">
-                   Search Locations
-                   <span class = "caret"></span>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separ ated link</a>
-          </div>
-        </div>
-        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FineDine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css" />
+	<script src="assets/jquery.js"></script>
+	<script src="assets/tether/dist/js/tether.min.js"></script>
+	<script src="assets/angularjs/angular.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<nav class="navbar fixed-top">
+	<div class="container-fluid">
+  	<ul class="nav">
+      <li><a href="#" title="Log In"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="#" title="Sign Up"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+  	</div>
+	</nav>
+	<div class="container">
+	<div class="header-image"></div>
+  	<div class="jumbotron">
+	<h1>FineDine</h1>
+	<div class="search">
+	<nav class="navbar">
+  	<form class="form-inline">
+  	<div class="dropdown" ng-app="myApp" ng-controller="mainCtrl">
+   	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle ="dropdown">{{coords}}
+   <span class="caret"></span></button>
+   <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+      <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+          <li><a href="#">JavaScript</a></li>
+   	</ul>
     </div>
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn btn-danger" type="submit">Search</button>
+  </form>
+</nav>
+</div>
+  	</div>
+  	<p>This is some text.</p>
+  	<p>This is another text.</p>
+	</div>
 
-            </form>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav main-nav  clear navbar-right ">
-                            <li><a class="navactive color_animation" href="#top">WELCOME</a></li>
-                            <li><a class="color_animation" href="#story">ABOUT</a></li>
-                            <li><a class="color_animation" href="#contact">CONTACT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+</body>
+</html>
